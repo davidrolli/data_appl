@@ -1,0 +1,107 @@
+﻿id,table_id,bezeichnung,bezeichnung_kurz,beschreibung,zweck,zielpublikum,software,typ_lnk,web_app,gis_app,virtuell,erstellungsdatum,version,versionsdatum,prioritaet,aktiv,fachapplikation,anzahl_nutzer,application_server,path_to_application,url_to_application,path_to_doc,id_persons_verantwortung,id_persons_hersteller,id_persons_support,id_persons_wartung
+1,2,"Bauzonenstatistik - Web-Client","Bauzonenstatistik - Web-Client","- Mit der Applikation ""Bauzonenstatistik"" können die Gemeinde in Eigenregie ihre Bauzonen via Internet selber erfassen/digitalisieren.
+- Die Applikation greift direkt auf den GIS-Server 'vgdagi04' der GIS-Fachstelle zu und ermöglicht das Erstellen und Ändern",,"- Gemeinden BL
+- ARP und andere DSTs","- Django (Python Framework)
+- GeoDjango: GIS-Extension in Python
+- ExtJS
+- GeoExt: ExtJS-Extension",2,1,1,0,19.10.2012 00:00:00,"1.0",,1,1,1,100,"?","http://bauzonenstatistik.bl.ch/",,,4,12,10,12
+2,2,"Bibliothek NL, Admin-GUI","Bibliothek NL, Admin-GUI","- Admin-Oberfläche der ""Bibliothek NL""-Applikation
+- ODBC-Verbindung zum 'BUDPROD10' (Oracle-DB)",,"ARP","- MS Access-2002",2,0,0,0,,,,2,1,1,10,,"P:\ARP\82 Grundlagedaten\822 NL_DATA\Bibliothek\Bibliothek_NL_Access2000_Oracle.mdb",,"http://budweb04.bl.ch/arp/gi/dokuwiki/doku.php?id=gi:bibliothek_arp_nl",1,,10,1
+3,2,"Bibliothek NL, Web-Client","Bibliothek NL, Web-Client","Web-Interface für die Suche von Büchern und Publikationen in der Bibliothek der Abteilung Natur und Landschaft.",,"ARP","- PHP 5.x",2,1,0,0,,,,2,1,0,10,"budweb04",,"http://budweb04.bl.ch/bibliotheken/bibliothek_nl/","http://budweb04.bl.ch/arp/gi/dokuwiki/doku.php?id=gi:bibliothek_arp_nl",1,,1,1
+4,2,"Bildserver-Web-Client","Bildserver-Web-Client",,,"ARP","- PHP 5.x
+- PHP-Library: ADOdb (http://adodb.sourceforge.net/)
+- JavaScript",2,1,0,0,,,,2,1,0,50,"budweb04",,"http://budweb04.bl.ch/Bildarchiv/html/BS_Start.html","http://budweb04.bl.ch/arp/gi/dokuwiki/doku.php?id=gi:bud_bildserver",1,,10,1
+5,2,"CadnaA","CadnaA","- Lärmmess-Software",,"ARP","- CadnaA (http://www.datakustik.com/produkte/cadnaa/)",1,0,0,0,,,,1,1,1,5,,,,,6,,4,26
+6,2,"dbread","dbread","- PHP-Applikation zur Abfrage von DBs verschiedener Typen. Die DB-Definitionen und die SQL-Queries werden in Paramater-Files abgelegt.
+- Die Applikation ist auf einfache Weise Passwort geschützt.",,"ARP","- PHP 5.x
+- PHP-Library: ADOdb (http://adodb.sourceforge.net/)",2,1,0,0,,,,1,1,1,10,"budweb04","http://budweb04.bl.ch/dbread/",,,1,,1,1
+7,2,"DenkInf","DenkInf","- Inventar der geschützten und schützenswerten Objekte des Kantons.",,"ARP",,,0,1,0,,,,1,0,1,8,,,,,3,,2,
+8,2,"Diasammlung ""Brodmann"" - Web-Client","Diasammlung ""Brodmann""-Client",,,"- ARP
+- Intranet-BL-Nutzer","- PHP 5.x
+- PHP-Library: ADOdb (http://adodb.sourceforge.net/)",2,1,0,0,,,,3,1,0,10,"budweb04","http://budweb04.bl.ch/diasammlung/brodmann/",,"http://budweb04.bl.ch/arp/gi/dokuwiki/doku.php?id=gi:diasammlung_brodmann",1,,1,1
+9,2,"Diasammlung ""Buser"" - Web-Client","Diasammlung ""Buser""-Client",,,"- ARP
+- Intranet-BL-Nutzer","- PHP 5.x
+- PHP-Library: ADOdb (http://adodb.sourceforge.net/)",2,1,0,0,,,,3,1,0,10,"budweb04","http://budweb04.bl.ch/diasammlung/buser/",,"http://budweb04.bl.ch/arp/gi/dokuwiki/doku.php?id=gi:diasammlung_buser&s[]=diasammlung",1,,1,1
+11,2,"Dokumenten-Management-System-RI ""MyDMS""","DMS RI","Kleines Dokumenten-Management-System der Abt. Rauminformation.","Dokumente der Abteilungen RI und NL zu verwalten.","ARP","- LetoDMS (http://www.letodms.com/; früher 'MyDMS')
+- PHP 5.x",2,1,0,0,,,,2,1,1,10,"budweb04","http://budweb04.bl.ch/mydms/",,,1,,1,24
+12,2,"DokuWiki der Datenverwaltungsstellen BL","DokuWiki der DVS BL","Informationen, Dokumentationen und Anleitungen für die seit dem 1.1.2012 im Auftrag der Gemeinden für die Rahmennutzungs- und Erschliessungsplänen verantwortlichen 'Datenverwaltungsstellen'.",,"Datenverwaltungsstellen, ARP",,2,1,0,0,,,,1,1,1,30,"? (ZID-Web-Srv.)",,"http://www.arp-daten.bl.ch/dvs/dokuwiki/",,2,,1,23
+13,2,"DokuWiki zu Fachdaten, Arbeiten und Projekten des ARP","DokuWiki ARP","DokuWiki, Webapplikation für die Dokumentation von Fachdaten, Arbeiten und Projekten.",,"ARP",,2,1,0,0,,,,1,1,1,10,"budweb04","http://budweb04.bl.ch/arp/gi/dokuwiki/",,,1,,1,23
+14,2,"DokuWiki zur Verwaltung und Führung der Abt. Rauminformation","DokuWiki RI","DokuWiki zur Verwaltung und Führung der Abt. Rauminformation",,"ARP",,2,1,0,0,,,,1,1,1,10,"budweb04","http://budweb04.bl.ch/arp/gi/abteilung/dokuwiki/",,,1,,1,
+15,2,"FeedReader","FeedReader","Freies Reader Programm zum lesen von RSS Feeds.",,"RI","- FeedReader (http://www.feedreader.com/)",1,0,0,0,,,,2,0,0,4,,,,,1,,1,
+16,2,"Findlinge - Admin-GUI","Findlinge - Admin-GUI","Im Jahre 2010 erfasste Julia Kümin im Rahmen eines Praktikums bei der Abt. NL das ""Inventar der Findlinge im Kanton Baselland"". Als Produkte der Arbeit entstanden eine PowerPoint-Dokumentation über sämtliche Findlingen (je ein Objektblatt mit einer bis mehreren Fotos), ein Praktikumsbericht, eine PGDB mit den Fundorten und eine Foto-Sammlung (JPGs).",,"ARP","- MS Access 2002",2,0,1,0,1.1.2010 00:00:00,,1.1.2010 00:00:00,1,1,1,4,,"\\Budfas01\Proj\ARP\82 Grundlagedaten\822 NL_DATA\Findlinge\Maps\ArcView\Findlinge.mdb",,"\\Budfas01\Proj\ARP\82 Grundlagedaten\822 NL_DATA\Findlinge\Projektunterlagen\",1,,1,1
+17,2,"FotoCDs - Admin-GUI","FotoCDs - Admin-GUI","GUI zu Pflege und Verwaltung der Metadaten.",,"NL","- MS Access 2002",2,0,0,0,1.1.2001 00:00:00,,1.1.2001 00:00:00,3,1,1,10,,"\\Budfas01\Proj\ARP\82 Grundlagedaten\822 NL_DATA\Foto_CD\DatabaseFotoCDs.mdb",,,1,,10,1
+18,2,"Geologisches Inventar - Admin-GUI","Geologisches Inv. - Admin-GUI","- Admin-GUI für die Metadaten der Objekte des Geologischen Inventars.
+- Admin-GUI für die Metadaten der Fotos des Geologischen Inventars.
+- Admin-GUI für die Zuordnung der Fotos, Karten- und Profilblätter zu den Objekten des Geologischen Inventars.",,"Intranet, NL","- MS Access 2002",2,0,0,0,,,,1,1,1,10,,"\\Budfas01\Proj\ARP\82 Grundlagedaten\822 NL_DATA\Geologisches_Inventar\Maps\ArcView\Geologisches_Inventar.mdb",,,1,,10,1
+19,2,"Google Earth","Google Earth",,,"ARP","Google Earth (http://www.google.de/intl/de/earth/index.html)",1,0,1,0,,,,2,1,0,,,,,,,,2,
+20,2,"Interlis Studio","Interlis Studio",,,"ARP","Interlis Studio (http://www.geocom.ch/de/ToolDownload/)",1,0,1,0,,,,1,0,1,10,"budlizenz01",,,,2,,2,
+21,2,"Inventar der Amphibienlaichgebiete - Admin-GUI","Inv. der Amph.-Laichg. - GUI",,,"ARP","MS Access 2002",2,0,1,0,,,,2,1,1,4,,"\\Budfas01\Proj\ARP\82 Grundlagedaten\822 NL_DATA\Amphibieninventar\Maps\ArcView\Amphibienlaichgebiete.mdb",,,1,,10,1
+22,2,"Inventar der geschützten Naturobjekte - Admin-GUI","Inv. geschützten Naturobjekte","- Personal GeoDataBase (Access-DB) 
+- Stand der Daten: wird laufend nachgeführt 
+- Datenherr: Abt. Natur und Landschaft 
+- Dokumente sind auf dem ZID-Web-Server 'www.arp-daten.bl.ch' abgelegt.",,,"- MS Access 2002",2,1,1,0,,,,1,1,1,300,"www.arp-daten.bl.ch","\\Budfas01\Proj\ARP\82 Grundlagedaten\822 NL_DATA\Geschuetzte_Naturobjekte\Maps\ArcView\Geschuetzte_Naturobjekte_GUI_101.mdb",,,1,,1,
+23,2,"Kletterei - Web-Client","Kletterei - Web-Client",,,"Internet, ARP","- CodeIgniter (PHP-Frameworks; http://ellislab.com/codeigniter)
+- ExtJS (Javascript Library; http://www.sencha.com/products/extjs)
+- Sencha Architect (JS-IDE für ExtJS; http://www.sencha.com/products/architect/)",2,1,1,0,11.1.2013 00:00:00,,,1,1,1,100,"faiweb02vm.bl.ch","http://www.klettern.bl.ch/",,"http://budweb04.bl.ch/arp/gi/dokuwiki/doku.php?id=nl:kletterei",1,,10,1
+24,2,"Lärm-Monitoring - Web-Client","Lärm-Monitoring - Web-Client","Die Web-Applikation stellt in die Messergebnisse der Lärmmessungen der Abt. LZ in übersichtlicherweise dar.
+Die Applikation wurde mit Hilfe des PHP-Frameworks ""CodeIgniter"" und versch. Javascript Libraries. Für die Messdaten greift dir direkt auf die MS S","Die Messdaten einem breiten Publikum auf illustrative Weise zugänglich zu machen.","Internet","- CodeIgniter (PHP-Frameworks; http://ellislab.com/codeigniter)
+- Javascript Libraries:
+  - jQuery
+  - jqZoom (jQuery Plugin)
+  - SimpleModal (jQuery Plugin)
+  - Googel Maps",,1,0,0,,"3.0",27.10.2011 00:00:00,1,1,1,100,"faiweb02vm.bl.ch",,"http://www.noise1.bl.ch/lz_monitoring/tagesrapport/show/1","http://budweb04.bl.ch/arp/gi/dokuwiki/doku.php?id=lz:construction_site",1,,10,1
+25,2,"Lernendenprognose","Lernendenprognose","Die Applikation ""Lernendenprognose"" wurde mit Hilfe von SQL-Scripts und ExtJS implementiert. Sie greift direkt auf den GIS-Server 'vgdagi04' der GIS-Fachstelle zu.",,"ARP","ExtJS (Javascript Library; http://www.sencha.com/products/extjs)",,1,0,0,,,,1,1,1,80,"?",,,,4,,1,
+26,2,"MySQL Workbench","MySQL Workbench","Admin-SW zur Verwaltung von MySQL-DB-Severn.",,"ARP",,,0,0,0,,,,1,1,1,10,,,,,1,,1,
+27,2,"Naturschutzmanagement","Naturschutzmanagement","- Die MS Access-Applikation greift via ODBC auf die MySQL-DB zu.",,"ARP","MS-Access => 2002",,0,1,0,,,,3,0,1,10,,"\\Budfas01\Proj\ARP\82 Grundlagedaten\822 NL_DATA\Naturschutzmanagement\Database\NSM_V5.mdb",,,1,,1,
+28,2,"Nor Review","Nor Review",,,"ARP",,,0,0,0,,,,2,1,0,3,,,,,,,1,
+29,2,"Nor Xfer","Nor Xfer",,,"ARP",,,0,0,0,,,,2,0,0,3,,,,,,,1,
+30,2,"Liste  der Naturobjekte von regionaler Bedeutung, Admin-Oberfläche","NS-Objekte von regionaler Bed.","Access-GUI",,"ARP","MS-Access => 2002",,0,1,0,,,,2,1,1,10,,"\\Budfas01\Proj\ARP\82 Grundlagedaten\822 NL_DATA\Naturobjekte_von_regionaler_Bedeutung\Maps\ArcView\NS_Objekte_von_regionaler_Bedeutung.mdb",,,1,,10,1
+31,2,"Ornithologisches Inventar","Ornithologisches Inventar","- Personal GeoDataBase (Access-DB) 
+- Stand der Daten: 1995 
+- wird nicht nachgeführt 
+- Datenherr: Abt. Natur und Landschaft 
+- Dokumente sind auf dem ZID-Web-Server 'www.arp-daten.bl.ch' abgelegt.",,"ARP",,,0,1,0,,,,1,1,1,300,"www.arp-daten.bl.ch/nldaten/ornithologisches_inven","\\Budfas01\Proj\ARP\82 Grundlagedaten\822 NL_DATA\Ornithologisches_Inventar\Maps\ArcView\Ornithologisches_Inventar.mdb",,,1,,1,
+32,2,"Pflegeplaene","Pflegeplaene","- Personal GeoDataBase (Access-DB) 
+- Stand der Daten: ~2008
+- wird nicht nachgeführt 
+- Datenherr: Abt. Natur und Landschaft",,"ARP",,,0,1,0,,,,2,1,1,10,,"\\Budfas01\Proj\ARP\82 Grundlagedaten\822 NL_DATA\Pflegeplaene\Maps\Arcview\Pflegeplaene.mdb",,,1,,1,
+33,2,"Pilze","Pilze","- Personal GeoDataBase (Access-DB)
+- Stand der Daten: wird laufend nachgeführt 
+- Datenherr: Abt. Natur und Landschaft",,"ARP",,,0,1,0,,,,1,1,1,10,,"\\Budfas01\Proj\ARP\82 Grundlagedaten\822 NL_DATA\Pilze\Maps\ArcView\Pilze_Total.mdb",,,1,,1,
+34,2,"PLAV (Planarchiv)","PLAV (Planarchiv)","- Tool zur Verwaltung des Planarchives des ARP inkl. Pfade zu den eingescannten Plänen und Reglementen",,"ARP",,,0,1,0,,,,1,0,1,10,"budweb04",,,,2,,1,
+35,2,"PostgreSQL ODBC Driver","PostgreSQL ODBC Driver",,,"ARP",,,0,0,0,,,,1,1,1,100,,,,,1,,1,
+36,2,"Projektmanagement-Tool GI/NL","Projektm.-Tool GI/NL","- ""DotProject"", eine Open Source-Projekt-Management-Web-Applikation auf der Basis von PHP und MySQL.",,"ARP",,,0,0,0,,,,2,1,1,10,"budweb04","http://budweb04.bl.ch/dotproject/",,,1,,1,
+37,2,"Raumbeobachtung","Raumbeobachtung","- Die Web-Applikation ""Raumbobachtung"" soll die räumlichen Veränderungen bzw. die räumliche Entwicklung über die Zeit dokumentieren.
+- Die Applikation wurde mit Hilfe von SQL-Scripts und ExtJS implementiert. Sie greift direkt auf den GIS-Server 'vgdagi04",,"ARP",,,1,1,0,,,,1,1,1,80,"faiweb02vm.bl.ch","http://raumbeobachtung.bl.ch/",,,4,,1,
+38,2,"Reptilien- und Amphibien-Meldungen","Reptilien-,Amphibien-Meldungen","- Personal GeoDataBase (Access-DB) 
+- Stand der Daten: wird laufend nachgeführt
+- Datenherr: Abt. Natur und Landschaft",,"ARP",,,0,1,0,,,,2,1,1,10,,"\\Budfas01\Proj\ARP\82 Grundlagedaten\822 NL_DATA\Reptilieninventar\Database\Reptilien-Amphibien-Meldungen.mdb",,,1,,1,
+39,2,"Reptilieninventar","Reptilieninventar","- Personal GeoDataBase (Access-DB) 
+- Stand der Daten: 1999
+- wird nicht nachgeführt 
+- Datenherr: Abt. Natur und Landschaft 
+- Dokumente und Fotos sind auf dem ZID-Web-Server 'www.arp-daten.bl.ch' abgelegt.",,"ARP",,,1,1,0,,,,1,1,1,300,"www.arp-daten.bl.ch/nldaten/reptilieninventar/ ","\\Budfas01\Proj\ARP\82 Grundlagedaten\822 NL_DATA\Reptilieninventar\Maps\ArcView\Reptilien.mdb",,,1,,1,
+40,2,"Schwachstellenanalyse Langsamverkehr","Schwachstellenanalyse LV","- Die Applikation ""Schwachstellenanalyse Langsamverkehr"" wurde mit Hilfe des Python Framework ""Django"" implementiert. Sie greift direkt auf den GIS-Server 'vgdagi04' der GIS-Fachstelle zu und ermöglicht das Erstellen und Ändern von Daten direkt in der Pos",,"ARP",,,1,1,0,,,,1,1,1,80,"?","http://kp-lsv.bl.ch/",,,1,,1,
+41,2,"Sencha Architect 2","Sencha Architect 2","- Wisywyg Tool zum Designen von Desktop-, iPad- und iPhone Applikationen mit der JavaScript Library 'ExtJS' von Sencha.
+- Erzeugt aus dem Design plus der Parametrisierung den benötigten JavaScript Code.
+- Befolgt die MVC-Struktur",,"ARP",,,0,0,0,,,,1,1,1,5,,,,,1,,1,
+42,2,"Sissis Sunrise","Sissis Sunrise","- Bibliothek Programm",,"ARP",,,0,0,0,,,,2,0,0,1,,,,,,,1,
+43,2,"SketchUp6","SketchUp6","- 3D Modellierungstool",,"ARP",,,0,0,0,,,,3,0,0,4,,,,,,,1,
+44,2,"ThumbsPlus","ThumbsPlus","- Bildverwaltung-Tool bassierend auf MS Access.",,"ARP",,,0,0,0,,,,1,0,0,60,,,,,1,,1,
+45,2,"TOAD Data Modeler","TOAD Data Modeler","- Data Modeler für div. DB-Typen, beihaltet ein Regineering-Modul.
+- Inklusive PostgreSQL-Modul !",,"ARP",,,0,0,0,,,,2,1,1,5,,,,,7,,2,
+46,2,"TOAD for Oracle","TOAD for Oracle","- Administrations-Tool für Oracle-DBs.",,"ARP",,,0,0,0,,,,1,1,1,5,,,,,7,,2,
+47,2,"VDB","VDB","- Vernehmlassungsdatenbank Ortsplanung",,"ARP",,,0,0,0,,,,1,0,1,30,,,,,5,,2,
+48,2,"VLP","VLP","- Entscheidsammlung",,"ARP",,,0,0,0,,,,1,0,0,,,,,,,,1,
+49,2,"Waldinventar","Waldinventar","- Personal GeoDataBase (Access-DB) 
+- Stand der Daten: 1995 
+- wird nicht nachgeführt 
+- Datenherr: Abt. Natur und Landschaft 
+- Dokumente sind auf dem ZID-Web-Server 'www.arp-daten.bl.ch' abgelegt.
+- Metadaten in der ZID-MySQL-DB '???' !!!???
+- Dat",,"ARP",,,1,1,0,,,,1,1,1,,,"\\Budfas01\Proj\ARP\82 Grundlagedaten\822 NL_DATA\Waldinventar\Maps\ArcView\Waldinventar.mdb",,,1,,1,
+50,2,"Bibliothek SIT, Admin-Oberfläche","Bibliothek SIT, Admin","- Admin-Oberfläche der ""Bibliothek SIT""-Applikation
+- ODBC-Verbindung zum 'BUDPROD10' (Oracle-DB)",,"ARP","- MS Access-2002",2,0,0,0,,,,2,1,1,10,,"P:\ARP\82 Grundlagedaten\822 NL_DATA\Bibliothek\Bibliothek_SIT_Access2000_Oracle_20050425.mdb",,"http://budweb04.bl.ch/arp/gi/dokuwiki/doku.php?id=gi:bibliothek_sit",1,,10,1
+51,2,"Bibliothek SIT, Web- Interface","Bibliothek SIT, Client","Web-Interface für die Suche von Büchern und Publikationen in der Bibliothek der Sicherheitsinspektorats.",,"ARP","- PHP 5.x",2,1,0,0,,,,2,1,0,10,"budweb04",,"http://budweb04.bl.ch/bibliotheken/bibliothek_sit/","http://budweb04.bl.ch/arp/gi/dokuwiki/doku.php?id=gi:bibliothek_sit",31,,1,1
+52,2,"Bildserver - Admin-GUI","Bildserver - Admin-GUI","Admin-GUI welche mit MS Access über ODBC auf die Tabellen der MySQL-DB zugreift.",,"ARP","- MS Access 2002",2,0,0,0,,,,2,1,1,50,,"\\Budfas01\Proj\ARP\82 Grundlagedaten\822 NL_DATA\Foto_CD\Database\FotoCDs.mdb",,"http://budweb04.bl.ch/arp/gi/dokuwiki/doku.php?id=gi:bud_bildserver",1,,10,1
+53,2,"GeoView BL","GeoView BL",,,,,,1,1,0,,,,1,1,0,,,,,,,,,
