@@ -41,13 +41,15 @@ class Applications_Controller extends Base_Controller {
   
   public function get_rel($id)
   {
-    $application = Application::find((int)$id)->datasources;
-//    $application = Application::where('id', '=', (int)$id)->get(array('id', 'bezeichung_kurz'))->datasources;    
-//    $application = Application::where('id', '=', (int)$id)->get(array('id', 'bezeichung_kurz'))->datasources;    
-    return Response::json($application);
+    $dts = Application::with('datasources')->where('id' ,'=', (int)$id)->get();
+
+//    $d = $dts[0]->to_array();
+    $d = $dts[0]->to_array();
+    
+    return Response::json($d['datasources']);
   }
   
-  
+    
   public function get_new()
   {
     return '[get_new...';

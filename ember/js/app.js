@@ -2,51 +2,82 @@ App = Ember.Application.create();
 
 App.Store = DS.Store.extend({
   revision: 12,
-//  adapter: 'DS.FixtureAdapter'  
+
+//  adapter: 'DS.FixtureAdapter'
+
   adapter: DS.RESTAdapter.extend({
-    url: 'http://localhost/barprol/work/kletterei/index.php/kletterei/kletterobjekt/3'
+//    url: 'http://localhost/barprol/work/kletterei/index.php/kletterei/kletterobjekt/3'
+    url: 'http://laravel3.dev'
   })
 });
 
+// /applications/7
+
 App.Router.map(function() {
-  this.resource('posts', function() {
-    this.resource('post', { path: ':post_id' })
+  this.resource('datasources', function() {
+    this.resource('datasource', { path: ':post_id' })
   });
   this.resource('about');
 });
 
+
 App.IndexRoute = Ember.Route.extend({
   redirect: function() {
-    this.transitionTo('posts');
+    this.transitionTo('applications');
   }
 });
 
-App.PostsRoute = Ember.Route.extend({
+
+App.DatasourcesRoute = Ember.Route.extend({
   model: function() {
-    return App.Post.find();
-  }
-});
-
-App.PostController = Ember.ObjectController.extend({
-  isEditing: false,
-  
-  doneEditing: function() {
-    this.set('isEditing', false);
-  },
-  
-  edit: function() {
-    this.set('isEditing', true);
+    return App.Datasource.find();
   }
 });
 
 
-App.Post = DS.Model.extend({
-  title: DS.attr('string'),
-  author: DS.attr('string'),
-  intro: DS.attr('string'),
-  extended: DS.attr('string'),
-  publishedAt: DS.attr('date')
+App.Datasource = DS.Model.extend({
+  id: DS.attr('integer'),
+  table_id: DS.attr('integer'),
+  bezeichnung: DS.attr('string'),
+  bezeichnung_kurz: DS.attr('string'),
+  beschreibung: DS.attr('string'),
+  thematik: DS.attr('string'),
+  zielpublikum: DS.attr('string'),
+  typ_lnk: DS.attr('integer'),
+  erstellungsdatum: DS.attr('date'),
+  version: DS.attr('string'),
+  nachfuehrung: DS.attr('boolean'),
+  stand: DS.attr('date'),
+  genauigkeit: DS.attr('string'),
+  prioritaet: DS.attr('integer'),
+  aktiv: DS.attr('boolean'),
+  zugriff_via_web: DS.attr('boolean'),
+  anzahl_nutzer: DS.attr('integer'),
+  db_typ_cd: DS.attr('integer'),
+  postgis_version: DS.attr('integer'),
+  db_server: DS.attr('string'),
+  id_db_server: DS.attr('integer'),
+  db_name: DS.attr('string'),
+  db_schema: DS.attr('string'),
+  id_db_schema: DS.attr('integer'),
+  ftp_server: DS.attr('string'),
+  path_to_database: DS.attr('string'),
+  url_to_data: DS.attr('string'),
+  path_to_doc: DS.attr('string'),
+  geo_daten: DS.attr('boolean'),
+  alphanummerische_daten: DS.attr('boolean'),
+  bild_daten: DS.attr('boolean'),
+  gis2012: DS.attr('boolean'),
+  epsg_cd: DS.attr('integer'),
+  id_persons_datenherr: DS.attr('integer'),
+  id_persons_verantwortung: DS.attr('integer'),
+  id_persons_support: DS.attr('integer'),
+  id_persons_hersteller: DS.attr('integer'),
+  id_persons_wartung: DS.attr('integer'),
+  updated_at: DS.attr('date'),
+  created_at: DS.attr('date')
 });
+
 
 /*
 App.Post.FIXTURES = [{
@@ -65,6 +96,7 @@ App.Post.FIXTURES = [{
   publishedAt: new Date('11-11-2012')
 }];
 */
+
 
 Ember.Handlebars.registerBoundHelper('date', function(date) {
   return moment(date).fromNow();

@@ -11,38 +11,41 @@
   </head>
 
   <body>
-
+    <h2>This 'index.html' speaking...</h2>
+    
     <script type="text/x-handlebars">
       <div class="navbar">
         <div class="navbar-inner">
-          <a class="brand" href="#">Bloggr</a>
+          <a class="brand" href="#">Datasource-Datasource-DB Tool</a>
           <ul class="nav">
-            <li>{{#linkTo 'posts'}}Posts{{/linkTo}}</li>
+            <li>{{#linkTo 'datasources'}}Datasources{{/linkTo}}</li>
             <li>{{#linkTo 'about'}}About{{/linkTo}}</li>
           </ul>
         </div>
       </div>
       
       {{outlet}}
+
     </script>
+
     
-    <script type="text/x-handlebars" id="posts">
+    <script type="text/x-handlebars" id="datasources">
       <div class='container-fluid'>
         <div class="row-fluid">
           <div class="span3">
             <table class="table">
               <thead>
-                <tr><th>Recent Posts</th></tr>
+                <tr><th>Applikationen</th></tr>
               </thead>
               {{#each model}}
                 <tr>
                   <td>
-                    {{#linkTo 'post' this}}{{title}} <small class="muted">by {{author}}</small>{{/linkTo}}
+                    {{#linkTo 'datasource' this}}Id: {{id}}, Bezeichnung kurz: {{bezeichnung_kurz}}</small>{{/linkTo}}
                   </td>
                 </tr>
               {{/each}}
             </table>
-          </div>          
+          </div>
           <div class="span9">
             {{outlet}}
           </div>
@@ -50,9 +53,11 @@
       </div>
     </script>
 
-    <script type="text/x-handlebars" id="posts/index">
-      <p class="text-warning">Please select a post</p>
+
+    <script type="text/x-handlebars" id="datasources/index">
+      <p class="text-warning">Das ist die Test-Startseite - bitte eine Applikation auswählen</p>
     </script>
+
         
     <script type="text/x-handlebars" id="post">
       {{#if isEditing}}
@@ -72,12 +77,7 @@
       </div>
     </script>
 
-    <script type="text/x-handlebars" id="post/_edit">
-      <p>{{view Ember.TextField valueBinding='title'}}</p>
-      <p>{{view Ember.TextArea valueBinding='intro'}}</p>
-      <p>{{view Ember.TextArea valueBinding='extended'}}</p>
-    </script>
-    
+
     <script type="text/x-handlebars" id="about">
       <div class='about'>
         <p>Rabarber... Rabarber... Rabarber... Rabarber... Rabarber... Rabarber... Rabarber... </p>
@@ -87,6 +87,7 @@
         <p>Rabarber... Rabarber... Rabarber... Rabarber... Rabarber... Rabarber... </p>
       </div>
     </script>
+
     
     <script src="libs/js/jquery-1.9.1.min.js"></script>
     <script src="libs/js/handlebars.js"></script>
